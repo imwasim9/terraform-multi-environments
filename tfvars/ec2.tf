@@ -1,5 +1,5 @@
 resource "aws_instance" "terraform"{
-    ami = var.ami_id
+    ami = data.aws_ami.joindevops.id
     instance_type = var.instance_type
     vpc_security_group_ids = [aws_security_group.allow_all.id]
 

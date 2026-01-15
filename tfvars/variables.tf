@@ -6,10 +6,10 @@ variable "environment"{
     type = string
 }
 
-variable "ami_id" {
-    type = string
-    default = data.aws_ami.joindevops.id
-}
+# variable "ami_id" {
+#     type = string
+#     default = data.aws_ami.joindevops.id we need to use value only not the data-source value
+# }
 
 variable "instance_type"{
     type = string
