@@ -3,7 +3,7 @@ data "aws_ami" "joindevops"{
     most_recent = true
 
     filter {
-        name = "Name"
+        name = "name" # Name is case sensitive here. should use only name as value
         values = ["RHEL-9-DevOps-Practice"]
     }
 }
